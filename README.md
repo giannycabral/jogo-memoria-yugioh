@@ -1,5 +1,9 @@
-<h1># Jogo-da-Memoria</h1>
-<p>Acesse e divita-se !!
-https://giannycabral.github.io/"</p>
+# 🎮 YUGI OH ! JOGO DA MEMÓRIA 
 
-<img src="https://th.bing.com/th/id/OIP.9MCYVagtc0ds8XM-fuBFDgHaHa?pid=ImgDet&w=630&h=630&rs=1">
+Repositório do Jogo .
+
+## 💻 Tecnoligias Utilizadas
+- [Documentação do HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
+- [Documentação do CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Guia do JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)
+- [Noções básicas do JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
