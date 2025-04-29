@@ -9,24 +9,23 @@
   <link rel="stylesheet" href="./css/login.css">
 
   <script defer src="./js/login.js"></script>
-  <link rel="shortcut icon" href="./imagens/enigmamilenio.png"  type="icon">
+  <link rel="shortcut icon" href="./imagens/enigmamilenio.png" type="image/png">
   <title>Memory Game | Yugi </title>
 </head>
 
 <body>
-
+  <div class="login-bg"></div>
   <form class="login-form">
-
-    <div class="login__header">      
-      <img src="./imagens/Yu-Gi-Oh! Duel Monsters.jpg" alt="capa icon">      
-      <h1><br>Let's Play</h1>
+    <div class="login__header">
+      <img src="./imagens/Yu-Gi-Oh! Duel Monsters.jpg" alt="Logo Yu-Gi-Oh! Duel Monsters" class="login__logo">
+      <h1><span class="login__icon">🃏</span> Desafio da Memória Yu-Gi-Oh!</h1>
+      <p class="login__subtitle">Entre no duelo! Digite seu nome de duelista e tente bater o recorde!</p>
     </div>
-
-    <input type="text" placeholder="Name" class="login__input">
-    <button type="submit" class="login__button">Play</button>
-
+    <label for="username" class="sr-only">Nome</label>
+    <input type="text" id="username" name="username" placeholder="Seu nome de duelista" class="login__input" required autocomplete="off">
+    <button type="submit" class="login__button">Jogar</button>
+    <div class="login__footer">Desenvolvido com <span style="color:#fa9434">♥</span> para fãs de Yu-Gi-Oh!</div>
   </form>
-
 </body>
 
 </html>
