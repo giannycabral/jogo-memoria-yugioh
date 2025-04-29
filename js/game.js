@@ -98,7 +98,7 @@ const createEndGameModal = (player, time) => {
     window.location.reload();
   };
   modal.querySelector('.modal-back').onclick = () => {
-    window.location.href = '../index.html';
+    window.location.href = '/';
   };
 };
 
