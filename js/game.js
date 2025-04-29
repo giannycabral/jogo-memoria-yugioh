@@ -235,7 +235,7 @@ const createCard = (character) => {
   ].includes(character)) {
     ext = 'jpg';
   }
-  front.style.backgroundImage = `url('../imagens/${character}.${ext}')`;
+  front.style.backgroundImage = `url('/jogo-memoria-yugioh/imagens/${character}.${ext}')`;
 
   card.appendChild(front);
   card.appendChild(back);
