@@ -1,7 +1,5 @@
 # 🃏 Yu-Gi-Oh! Jogo da Memória
 
-<iframe width="500" height="227" src="https://www.loom.com/embed/b873203835a649cfb513b07f32b6ddb4?sid=7817645d-2329-4741-a147-8c20096ce6f6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 Bem-vindo ao desafio definitivo de memória inspirado no universo Yu-Gi-Oh! 🔥
 
 Teste sua memória, desafie amigos e tente bater o recorde neste jogo divertido e responsivo, com cartas dos monstros mais icônicos do anime!
