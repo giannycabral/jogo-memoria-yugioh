@@ -1,9 +1,38 @@
-# 🎮 YUGI OH ! JOGO DA MEMÓRIA 
+# 🃏 Yu-Gi-Oh! Jogo da Memória
 
-Repositório do Jogo .
+<iframe width="500" height="227" src="https://www.loom.com/embed/b873203835a649cfb513b07f32b6ddb4?sid=7817645d-2329-4741-a147-8c20096ce6f6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## 💻 Tecnoligias Utilizadas
-- [Documentação do HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
-- [Documentação do CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [Guia do JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)
-- [Noções básicas do JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+Bem-vindo ao desafio definitivo de memória inspirado no universo Yu-Gi-Oh! 🔥
+
+Teste sua memória, desafie amigos e tente bater o recorde neste jogo divertido e responsivo, com cartas dos monstros mais icônicos do anime!
+
+## 🚀 Como jogar
+
+1. Acesse a página inicial e insira seu nome de duelista.
+2. Clique em **Jogar** para começar.
+3. Encontre todos os pares de cartas no menor tempo possível.
+4. Tente bater o recorde de tempo e veja seu nome no ranking!
+
+## 🏆 Funcionalidades
+- Ranking com os 3 melhores tempos (ouro, prata, bronze)
+- Modal de parabéns ao finalizar o jogo
+- Botão de pausa e responsividade total
+- Visual moderno e inspirado em Yu-Gi-Oh!
+- Login personalizado para cada duelista
+
+## 📱 Responsivo
+O jogo funciona perfeitamente em computadores, tablets e celulares!
+
+## 💻 Tecnologias Utilizadas
+- HTML5
+- CSS3 (com animações e responsividade)
+- JavaScript puro
+
+## 🎨 Créditos das imagens
+Todas as imagens são de uso educacional e pertencem ao universo Yu-Gi-Oh!™
+
+## 👾 Jogue agora
+Abra o arquivo `index.html` em seu navegador ou acesse via GitHub Pages (se disponível).
+
+---
+Desenvolvido com ❤️ para fãs de Yu-Gi-Oh! por [Seu Nome].
