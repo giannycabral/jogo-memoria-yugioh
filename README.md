@@ -1,6 +1,16 @@
 # 🃏 Yu-Gi-Oh! Jogo da Memória
 
-<iframe width="500" height="227" src="https://www.loom.com/embed/b873203835a649cfb513b07f32b6ddb4?sid=7817645d-2329-4741-a147-8c20096ce6f6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<div>
+    <a href="https://www.loom.com/share/b873203835a649cfb513b07f32b6ddb4">
+      <p>yugioh.game - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/b873203835a649cfb513b07f32b6ddb4">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/b873203835a649cfb513b07f32b6ddb4-7354de9bd9d26959-full-play.gif">
+    </a>
+  </div>
+
+
 
 Bem-vindo ao desafio definitivo de memória inspirado no universo Yu-Gi-Oh! 🔥
 
