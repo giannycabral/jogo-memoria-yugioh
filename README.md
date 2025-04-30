@@ -31,7 +31,7 @@ O jogo funciona perfeitamente em computadores, tablets e celulares!
 Todas as imagens são de uso educacional e pertencem ao universo Yu-Gi-Oh!™
 
 ## 👾 Jogue agora
-Abra o arquivo `index.html` em seu navegador ou acesse via GitHub Pages (se disponível).
+Clique no link [Iniciar Jogo](https://giannycabral.github.io/jogo-memoria-yugioh/) e divirta-se 🎉❤️😊.
 
 ---
-Desenvolvido com ❤️ para fãs de Yu-Gi-Oh! por [Seu Nome].
+Desenvolvido com ❤️ para fãs de Yu-Gi-Oh! por [Regiane Cabral](https://github.com/giannycabral).
