@@ -62,8 +62,10 @@ const createElement = (tag, className) => {
 
 let firstCard = '';
 let secondCard = '';
+
 let loop = null;
 let paused = false;
+let seconds = 0;
 
 function formatTime(seconds) {
   return seconds.toString().padStart(2, '0');
@@ -257,8 +259,9 @@ const loadGame = () => {
   });
 }
 
+
 const startTimer = () => {
-  let seconds = 0;
+  // Só atualiza o timer na tela ao iniciar
   timer.innerHTML = formatTime(seconds);
   loop = setInterval(() => {
     seconds++;
@@ -266,9 +269,11 @@ const startTimer = () => {
   }, 1000);
 }
 
+
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');
   showRecords();
+  seconds = 0;
   startTimer();
   loadGame();
 }
