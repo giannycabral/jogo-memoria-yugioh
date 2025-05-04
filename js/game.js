@@ -1,3 +1,17 @@
+// Overlay de orientação paisagem para mobile
+function checkOrientation() {
+  const overlay = document.getElementById('orientationOverlay');
+  // Só ativa em telas pequenas (mobile)
+  if (window.innerWidth < 700 && window.innerHeight > window.innerWidth) {
+    overlay.classList.add('active');
+  } else {
+    overlay.classList.remove('active');
+  }
+}
+
+window.addEventListener('orientationchange', checkOrientation);
+window.addEventListener('resize', checkOrientation);
+
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const pauseBtn = document.querySelector('.pause-btn');
@@ -237,7 +251,7 @@ const createCard = (character) => {
   ].includes(character)) {
     ext = 'jpg';
   }
-  front.style.backgroundImage = `url('/jogo-memoria-yugioh/imagens/${character}.${ext}')`;
+  front.style.backgroundImage = `url('imagens/${character}.${ext}')`;
 
   card.appendChild(front);
   card.appendChild(back);
@@ -276,4 +290,5 @@ window.onload = () => {
   seconds = 0;
   startTimer();
   loadGame();
+  checkOrientation();
 }
