@@ -17,10 +17,13 @@
   display: flex;
 }
 .orientation-overlay img {
-  width: 64px;
-  height: 64px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 18px;
-  opacity: 0.85;
+  opacity: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 0 16px #fff, 0 4px 24px #000a;
+  background: #fff;
 }
 main {
     display: flex;
