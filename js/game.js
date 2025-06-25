@@ -171,9 +171,13 @@ const checkCards = () => {
   const secondCharacter = secondCard.getAttribute('data-character');
 
   if (firstCharacter === secondCharacter) {
-
+    // É um par! Marca as cartas como desabilitadas
     firstCard.firstChild.classList.add('disabled-card');
     secondCard.firstChild.classList.add('disabled-card');
+
+    // Aplicamos uma transição mais suave para as cartas que são pares
+    firstCard.style.transition = 'all 0.5s ease';
+    secondCard.style.transition = 'all 0.5s ease';
 
     firstCard = '';
     secondCard = '';
@@ -181,17 +185,15 @@ const checkCards = () => {
     checkEndGame();
 
   } else {
+    // Não é um par, vira as cartas de volta
     setTimeout(() => {
-
       firstCard.classList.remove('reveal-card');
       secondCard.classList.remove('reveal-card');
 
       firstCard = '';
       secondCard = '';
-
     }, 500);
   }
-
 }
 
 const setCardsBlocked = (block) => {
@@ -386,6 +388,9 @@ const createCard = (cardData) => {
     imagePath = `${character}.${ext}`;
   }
   
+  // Usa o atributo data-bg para o caminho da imagem em vez de style diretamente
+  // Isso permite que o navegador use a imagem já pré-carregada do cache
+  front.setAttribute('data-bg', `imagens/${imagePath}`);
   front.style.backgroundImage = `url('imagens/${imagePath}')`;
 
   card.appendChild(front);
@@ -458,12 +463,56 @@ const createExodiaImages = () => {
   });
 };
 
+// Função para pré-carregar todas as imagens das cartas
+const preloadCardImages = () => {
+  const cardImagePromises = [];
+  
+  // Pré-carrega todas as imagens dos cards
+  cardObjects.forEach(card => {
+    const promise = new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => reject(new Error(`Falha ao carregar imagem: ${card.img}`));
+      img.src = `imagens/${card.img}`;
+    });
+    cardImagePromises.push(promise);
+  });
+  
+  // Adiciona a imagem do verso da carta
+  const backPromise = new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = () => reject(new Error('Falha ao carregar imagem de verso'));
+    img.src = 'imagens/back.jpg';
+  });
+  cardImagePromises.push(backPromise);
+  
+  // Retorna uma promessa que resolve quando todas as imagens estiverem carregadas
+  return Promise.all(cardImagePromises)
+    .then(() => {
+      console.log('Todas as imagens foram pré-carregadas');
+    })
+    .catch(error => {
+      console.error('Erro ao pré-carregar imagens:', error);
+    });
+};
+
 window.onload = () => {
-  spanPlayer.innerHTML = localStorage.getItem('player');
-  showRecords();
-  seconds = 0;
-  startTimer();
-  createExodiaImages(); // Cria as imagens temporárias para as partes do Exodia
-  loadGame();
-  checkOrientation();
+  // Mostra uma mensagem de carregamento
+  grid.innerHTML = '<div class="loading">Carregando cartas...</div>';
+  
+  // Pré-carrega as imagens antes de iniciar o jogo
+  preloadCardImages().then(() => {
+    // Limpa a mensagem de carregamento
+    grid.innerHTML = '';
+    
+    // Inicia o jogo
+    spanPlayer.innerHTML = localStorage.getItem('player');
+    showRecords();
+    seconds = 0;
+    startTimer();
+    createExodiaImages(); // Cria as imagens temporárias para as partes do Exodia
+    loadGame();
+    checkOrientation();
+  });
 }
