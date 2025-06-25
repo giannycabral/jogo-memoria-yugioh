@@ -14,10 +14,11 @@ body {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background: url('../imagens/bgk.png') center/cover no-repeat;
-    opacity: 0.18;
+    opacity: 0.25; /* Aumentei a opacidade para melhor visualização */
     z-index: 0;
     pointer-events: none;
     animation: bg-move 18s linear infinite alternate;
+    filter: brightness(1.2) contrast(1.1); /* Adicionei filtros para melhorar a visibilidade */
 }
 @keyframes bg-move {
   0% { background-position: 0% 50%; }

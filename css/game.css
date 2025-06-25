@@ -31,12 +31,23 @@ main {
     width: 100vw;
     background-image: url('../imagens/bgk.png');
     background-size: cover;
+    background-position: center center; /* Melhora o posicionamento */
+    background-attachment: fixed; /* Evita que a imagem role com a página */
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     padding: 16px 0 40px 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    position: relative;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(59, 0, 23, 0.7) 0%, rgba(250, 148, 52, 0.7) 100%);
+    z-index: -1;
 }
 @media screen and (max-width:400px) {
   main {
