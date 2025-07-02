@@ -515,7 +515,48 @@ header {
 
 .exodia-win-screen h2 {
   font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.exodia-time {
+  font-size: 1.4em;
+  color: #ffd700;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.exodia-time-value {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+.exodia-record {
+  margin-top: 15px;
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.2), rgba(255, 140, 0, 0.2));
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  animation: glow 2s infinite alternate;
+}
+
+.exodia-record p {
+  color: white;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
 }
 
 .exodia-complete {

@@ -273,17 +273,29 @@ const checkForExodiaWin = () => {
     // Para o cronômetro
     clearInterval(loop);
     
+    // Registra o tempo do jogador ao encontrar o Easter Egg
+    const player = spanPlayer.innerHTML;
+    const time = +timer.innerHTML;
+    
+    // Adiciona ao placar com uma marca especial indicando que foi com o Easter Egg
+    addRecord(player + " 🏆", time);
+    showRecords();
+    
     setTimeout(() => {
       // EXODIA, OBLITERAR!
       grid.innerHTML = `
         <div class="exodia-win-screen">
           <h1>EXODIA, OBLITERAR!</h1>
           <h2>Você confiou no coração das cartas e Venceu o duelo! Parabéns!</h2>
+          <p class="exodia-time">Seu tempo foi: <span class="exodia-time-value">${formatTime(time)}</span> segundos</p>
           <div class="exodia-video-container">
             <video id="exodia-video" autoplay controls class="exodia-video">
               <source src="video/EXODIA.mp4" type="video/mp4">
               Seu navegador não suporta vídeos HTML5.
             </video>
+          </div>
+          <div class="exodia-record">
+            <p>💫 Seu tempo foi registrado no placar com um troféu especial! 💫</p>
           </div>
           <div class="exodia-buttons">
             <button class="exodia-button restart-button">Jogar novamente</button>
