@@ -47,5 +47,9 @@ Todas as imagens são de uso educacional e pertencem ao universo Yu-Gi-Oh!™
 ## 👾 Jogue agora
 Clique no link [Iniciar Jogo](https://giannycabral.github.io/jogo-memoria-yugioh/) e divirta-se 🎉❤️😊.
 
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 ---
 Desenvolvido com ❤️ para fãs de Yu-Gi-Oh! por [Regiane Cabral](https://github.com/giannycabral).
